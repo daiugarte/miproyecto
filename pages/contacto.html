@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi proyecto - Contacto</title>
+    <link href="../bootstrap-5.3.1-dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+        <a class="navbar-brand" href="./../index.html">
+                <img src="./../multimedia/logo.png" alt="Logo" width="60" height="60" class="d-inline-block align-text-top">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./programas.html">Programas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./servicios.html">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./promos.html">Promos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./sobre_mi.html">Sobre mi</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid contact"> 
+        <h2 class="contact-title">Contacto</h2>
+        <form class="contact-form">
+            <div class="mb-3">
+                <label for="date" class="form-label">Fecha del turno:</label>
+                <input type="date" id="start" name="date" value="2018-07-22" class="form-control">
+            </div>
+            
+            <div class="mb-3">
+                <label for="name" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="name" placeholder="Ingrese su numbre completo">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Ingrese su email">
+            </div>
+            <div class="mb-3">
+                <label for="phonenumber" class="form-label">Celular</label>
+                <input type="phonenumber" class="form-control" id="text" placeholder="Ingrese su numero de telefono">
+            </div>
+            
+           <div class="mb-3">
+                <label for="motivo" class="form-label">Motivo de la consulta</label>
+                <textarea class="form-control" id="motivo" rows="3"></textarea>
+            </div>
+            <div class="form-check mb-3">
+                <input class="form-check-input" type="checkbox" value="" id="check">
+                <label class="form-check-label" for="check">
+                    Me gustaria recibir informacion sobre promociones.
+                </label>
+            </div>
+            <div class="mb-3">
+                <button class="btn primary">Enviar</button>
+            </div>
+        </form>
+    </div>
+    
+
+   <footer class="footer">
+        <div class="container-fluid footer-content">
+
+            <!-- Footer navigation -->
+            <div class="footer-navigation">
+                <h3 class="footer-title">Menu</h3>
+                <ul class="footer-menu">
+                    <li class="footer-link">
+                        <a href="./../index.html">Inicio</a>
+                    </li>
+                    <li class="footer-link">
+                        <a href="./pages/programas.html">Programas</a>
+                    </li>
+                    <li class="footer-link">
+                        <a href="./pages/servicios.html">Servicios</a>
+                    </li>
+                    <li class="footer-link">
+                        <a href="./pages/promos.html">Promos</a>
+                    </li>
+                    <li class="footer-link">
+                        <a href="./pages/sobre_mi.html">Sobre mi</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Footer informacion de contacto -->
+            <div class="footer-contact">
+                <h3 class="footer-title">Información de contacto</h3>
+                <address class="footer-address">
+                    <p>
+                        Calle Siempre Viva 123<br />
+                        Springfield<br />
+                        The Simpons<br />
+                    </p>
+                    <a href="mailto:contacto@lauranutricion.com">contacto@lauranutricion.com</a><br />
+                    <a href="tel:+13115552368">(+54) 5555-2368</a>
+                </address>
+                <div class="footer-socials">
+                    <a href="" class="footer-icon"><i class="fa-brands fa-square-facebook fa-2xl"></i></a>
+                    <a href="" class="footer-icon"><i class="fa-brands fa-instagram fa-2xl"></i></a>
+                </div>
+            </div>
+
+            <!-- Footer newsletter -->
+            <div class="footer-newsletter">
+                <h3 class="footer-title">Suscribite a nuestro boletin semanal.</h3>
+                <form>
+                    <div class="mb-3">
+                        <input type="email" class="form-control" placeholder="Ingresa tu email"
+                            aria-describedby="emailHelp" />
+                        <div id="emailHelp" class="form-text">
+                            No te preocupes, no te enviaremos spam.
+                        </div>
+                    </div>
+                    <button type="submit" class="btn primary">Suscribirse</button>
+                </form>
+            </div>
+        </div>
+    </footer>
+    <script src="../bootstrap-5.3.1-dist/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,256 @@
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+}
+
+.navbar-logo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+/* Header */
+
+.header {
+  width: 100%;
+  height: 700px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 70px;
+  background-color: #877666;
+  background-image: url(./multimedia/header.jpg);
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+
+.header .logo {
+  width: 250px;
+  height: auto;
+  background-color: rgba(255, 255, 255, 0.75);
+  border-radius: 50%;
+}
+
+.header .content .headline {
+  width: 100%;
+  color: white;
+  background-color: #877666;
+  z-index: 3;
+  padding: 8px 0;
+  margin: 0;
+}
+
+.header .content .description {
+  width: 100%;
+  display: flex;
+  padding: 8px;
+  font-size: 18px;
+  background-color: white;
+}
+
+@media (min-width: 576px) {
+  .header .content .description {
+    padding: 48px 32px;
+    font-size: 20px;
+  }
+}
+
+/* Buttons */
+
+.btn.primary {
+  color: white;
+  background-color: #877666;
+}
+
+.btn.primary:hover {
+  color: white;
+  background-color: #a08c7a;
+}
+
+/* Section */
+
+.section {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: stretch;
+  color: black;
+  background-color: #f4efbd;
+}
+
+.section .image-container {
+  display: flex;
+  position: relative;
+}
+
+.section .section-image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.section .section-content {
+  width: 100%;
+  padding: 32px 8px;
+}
+
+.section .section-content .section-title {
+  margin-bottom: 25px;
+}
+
+.section .section-content .section-description {
+  margin-bottom: 50px;
+}
+
+.section.inverted {
+  color: white;
+  background-color: #877666;
+}
+
+@media (min-width: 576px) {
+  .section {
+    flex-direction: row;
+  }
+  .section.inverted {
+    flex-direction: row-reverse;
+  }
+
+  .section .section-content {
+    width: 100%;
+    padding: 32px;
+  }
+ 
+  .section .image-container {
+    width: 100%;
+    height: 600px;
+    padding: 32px;
+  }
+
+  .section .image-container .section-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+/* Contact */
+
+.contact {
+  height: min-content;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact .contact-title {
+  margin-bottom: 32px;
+}
+
+/* Promos */
+
+.promos {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 32px;
+}
+
+.promos .promo {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.promo .promo-image {
+  width: auto;
+  height: 200px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.promo .promo-title {
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.promo .promo-description {
+  width: 350px;
+  text-align: center;
+}
+
+@media (min-width: 576px) {
+  .promos  {
+    flex-direction: row;
+  }
+}
+
+/* Footer */
+
+.footer {
+  width: 100%;
+  height: min-content;
+  padding: 32px 0;
+  background-color: #f4efbd;
+}
+
+.footer .footer-content {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.footer .footer-newsletter {
+  margin-bottom: 16px;
+}
+
+.footer .footer-contact {
+  margin-bottom: 16px;
+}
+
+.footer .footer-title {
+  font-size: 18px;
+  text-decoration: underline;
+  margin-bottom: 16px;
+}
+
+.footer .footer-menu {
+  list-style: none;
+  padding: 0;
+}
+
+.footer .footer-link a {
+  font-size: 50x;
+  color: black;
+  text-decoration: none;
+}
+
+.footer .footer-link a:hover {
+  text-decoration: underline;
+}
+
+.footer .footer-contact .footer-socials a{
+  color: black;
+}
+.footer  .footer-address a {
+  color: black;
+}
+
+@media (min-width: 576px) {
+  .footer .footer-content {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .footer .footer-title {
+    margin-top: 20px;
+  }
+}
