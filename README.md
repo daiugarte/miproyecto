@@ -4,7 +4,7 @@ Proyecto final presentado para el curso de Desarrollo Web de Coderhouse, donde s
 
 ## Demo
 
-[Mi Projecto - Live DEMO](daiugarte.github.io/miproyecto)
+[Mi Projecto - Live DEMO](https://daiugarte.github.io/miproyecto/)
 
 ## SEO
 
