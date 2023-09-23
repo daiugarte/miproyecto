@@ -7,6 +7,7 @@
   <meta name="description" content="Un espacio sobre nutricion. Servicios brindados por la nutricionista Laura Perez">
   <meta name="keywords" content="nutricion, servicios de nutricion, nutricionista, salud, bienestar, saludable">
   <title>Laura Nutricion</title>
+  <link rel="stylesheet" href="./node_modules/aos/dist/aos.css">
   <link rel="stylesheet" href="./css/styles.css" />
 </head>
 
@@ -90,7 +91,7 @@
   <main>
     <section class="section">
       <div class="section-wrapper container-md">
-        <div class="section-content">
+        <div class="section-content" data-aos="fade-up">
           <h2 class="section-title">Programas</h2>
           <p class="section-description">
             Es importante tener buenas herramientas para hacer mas simple y eficaz nuestro camino, es por ello que en esta seccion podras encontrar nuevos recursos para continuar con tus cambios.
@@ -105,7 +106,7 @@
 
     <section class="section inverted">
       <div class="section-wrapper container-md">
-        <div class="section-content">
+        <div class="section-content" data-aos="fade-up">
           <h2 class="section-title">Servicios</h2>
           <p class="section-description">
             Resignifiquemos tu relación con la alimentación, con tu cuerpo y tu bienestar general, para vivir con energía y plenitud.
@@ -123,7 +124,7 @@
 
     <section class="section">
       <div class="section-wrapper container-md">
-        <div class="section-content">
+        <div class="section-content" data-aos="fade-up">
           <h2 class="section-title">Promos</h2>
           <p class="section-description">¡No te pierdas esta oportunidad!</p>
           <a href="./pages/promos.html" type="button" class="btn btn-light">Ver mas</a>
@@ -136,7 +137,7 @@
 
     <section class="section inverted">
       <div class="section-wrapper container-md">
-        <div class="section-content">
+        <div class="section-content" data-aos="fade-up">
           <h2 class="section-title">Sobre mi</h2>
           <p class="section-description">
             Desde muy chica siempre me gusto comer de todo, pero con el tiempo me di cuenta que debia aprender a comer
@@ -240,7 +241,11 @@
     </div>
   </div>
 
+  <script src="./node_modules/aos/dist/aos.js"></script>
   <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>

@@ -1,0 +1,35 @@
+.promos {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 32px;
+
+  .promo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .promo-image {
+      width: auto;
+      height: 200px;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+    .promo-title {
+      margin-bottom: 16px;
+      text-align: center;
+    }
+    .promo-description {
+      width: 350px;
+      text-align: center;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .promos {
+    flex-direction: row;
+  }
+}
